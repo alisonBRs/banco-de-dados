@@ -1,0 +1,80 @@
+body {
+    background: url(../images/img/body-bg.png) no-repeat;
+    background-size: 97rem;
+  }
+
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 7.125rem 1fr;
+}
+
+
+.form-container {
+  max-width: 22.75rem;
+  
+}
+
+.form-container .button,
+.form-container .button-2{
+width: 100%;
+padding: 0 6.875rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 2px solid #a1b2cd;
+  border-radius: 8px;
+  padding: 13px 16px;
+}
+
+input::placeholder {
+  font: 400 1rem 'Open Sans', sans-serif;
+}
+
+section #background-img {
+  background: url(../images/img/home-bg-img.svg) no-repeat top/contain;
+  width: 40rem;
+  height: 37.9rem;
+  margin-right: 10.268rem;
+  background-position-x: -5rem;
+ 
+}
+
+.form {
+  display: grid;
+  align-items: center;
+}
+
+.form form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.change-container {
+  display: flex;
+  align-items: center;
+  gap: 0.84rem;
+  font-weight: 400;
+  color: var(--icons-and-details);
+  margin: 2.5rem 0;
+}
+
+.change-container .divider {
+  height: 1px;
+  width: 9.846rem;
+  background: var(--icons-and-details);
+}
+
+.room-creation {
+  display: grid;
+  gap: 1.5rem;
+}
+
+

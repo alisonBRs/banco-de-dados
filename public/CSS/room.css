@@ -1,0 +1,20 @@
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  min-width: 70rem;
+}
+
+
+.button,
+.button-2{
+padding: 0 2rem;
+font: 500 1rem 'poppins',sans-serif;
+ 
+}
+
+.container{
+  padding: 0 10rem 5rem 10rem;
+  min-width: 70rem;
+}

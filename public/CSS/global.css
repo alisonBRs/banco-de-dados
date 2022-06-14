@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-fontsmothing: antialiased;
+}
+
+
+:root{
+  --linear:#5498FF;
+  --black:#0D114F;
+  --white:#FAFAFA;
+  --red:#E83F5B;
+  --light-blue:#E0ECFF;
+  --blue:#3485FF;
+  --background:#FBFCFF;
+  --overlay:#040911;
+  --icons-and-details:#A5B0C1;
+  
+  --grey-dark:#4D5E77;
+  --grey-blue:#A1B2CD;
+  --grey-light:#E5EAF1;
+
+  --hover-blue:#5699FF;
+  --hover-red:#EA4B65;
+
+}
+
+body {
+  font: 500 1rem 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;    
+ 
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  outline: none;
+}
+
+header {
+  padding: 2.187rem 10rem;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+header .logo {
+  height: 2.72rem;
+  width: 10.43rem; 
+}
+
+.title {
+  font: 700 1.75rem 'Poppins', sans-serif;
+  color: var(--black);
+}
+
+.alternative-text{
+  font: 400 1rem 'open sans',sans-serif;
+}
+
+.button,
+.button-2{
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 8px;
+  height: 3.125rem;
+  transition: .3s;
+  
+}
+
+.button{
+  color: var(--white);
+  background: var(--blue);
+  cursor: pointer;
+  border: none;  
+}
+
+.button-2 {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  background: var(--white);
+}
+
+
+.button img {
+  width: 1.25rem;
+}
+
+.button:hover{
+  filter: brightness(1.2);
+}
+
+input.input{
+  border: 2px solid var(--blue) ;
+  border-radius: 8px;
+  padding: 0.812rem 2.875rem 0.812rem 1rem;
+  width: 8.6rem;
+  height: 100%;
+  font: 500 1rem 'poppins',sans-serif;
+  color: var(--blue);
+}
+
+.button-container{
+  display: flex;
+  gap: 0.5rem;
+  height: 3.125rem;
+
+}
+
+.input-copy{
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+.input-copy img{
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  margin: 1rem;
+  margin-bottom: 0;
+  height: 6rem;
+  font:400 1rem 'poppins',sans-serif;
+
+}
+
+#textarea::placeholder{
+  font:400 1rem 'open sans',sans-serif;
+  color: var(--grey-blue);
+}
+
+.textarea-container .annonimous-box{
+font: 400 .875rem 'poppins',sans-serif;
+display: flex;
+align-items: center;
+gap: .375rem;
+color: var(--icons-and-details);
+}
+
+.textarea-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid var(--grey-blue);
+  border-radius: 0 8px 8px 8px;
+  height: 8.375rem;
+  margin-bottom: 2.5rem;  
+}
+
+.textarea-footer{
+  display: flex;
+  justify-content: space-between;  
+  padding: 1rem;
+}
+
+.textarea-footer .small-button{
+  height: 2.5rem;
+  padding: 8px 24px;
+}
+
+section.section{
+  display: flex;
+  justify-content: center;
+}
+
+section.section .off{
+  display: none;
+}
+
+.container .title-question{
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .no-questions-box{
+  width: 18rem;
+  
+}
+
+.container .no-questions-box .title-box{
+ text-align: center;
+}
+
+.container .no-questions-box .title{
+font: 600 1.125rem 'poppins',sans-serif;
+margin-bottom: .812rem;
+}
+
+.container .no-questions-box p{
+  font: 400 .875rem 'open sans',sans-serif;
+  color: var(--grey-dark);
+  text-align: center;  
+  width: 17rem;
+  margin: 0 auto;  
+}
+
+.container .no-questions-box .img-question{
+  display: flex;
+  justify-content: center;  
+}
+
+.container .no-questions-box .img-question img{
+  padding: 0.75rem;
+}
+
+section .message-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 8.5rem;
+  border-radius: 0 8px 8px 8px;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  background: var(--light-blue);
+}
+
+section .message-container.read{
+  background: var(--grey-light);
+}
+
+section .message-container.read .message-user img{
+  background-color: var(--grey-blue);
+}
+
+
+
+section .message-container .message-user{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+section .message-container .message-user .user-wrapper{
+  display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+section .message-container .message-user p{
+  width: 25rem;
+  color: var(--black);
+  word-break: break-word;
+}
+
+section .message-container .message-user img{
+  padding: .875rem;
+  background: var(--blue);
+  clip-path: circle();
+  
+}
+
+section .message-container .message-options{
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+section .message-container .message-options button{
+  display: flex;
+  gap: .5rem;
+  align-items: flex-end;
+  color: var(--grey-dark);
+  border: none;
+  background: none;  
+  cursor: pointer;  
+}
+
+.grid{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+}
+
+.modal-container{
+  display: none;
+  visibility: hidden;
+  opacity: 0; 
+}
+
+.modal-container.modal-on{  
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgba(4,9,17,0.8);  
+}
+
+.modal-container .modal{
+  background: var(--white);
+  border-radius: .8rem;
+  text-align: center;  
+  padding: 4rem 5.175rem;
+}
+
+.modal-container .modal .input::placeholder{
+  opacity: .8;
+  font-family: 'open sans',sans-serif;
+  text-align: center;
+}
+
+.modal-container .modal h3{
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: var(--black);
+  margin-bottom: .75rem;
+}
+
+.modal-container .modal p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--grey-dark);
+  margin-bottom: 1.5rem;
+}
+
+.modal-container .modal .input{
+  height: 3rem;
+  width: 18.875rem;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+
+.modal-container .modal .modal-action{
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.modal-container .modal .btn-modal-1{
+  color: var(--grey-dark);
+  background: var(--grey-light);
+}
+
+.modal-container .modal .btn-modal-1:hover{
+  background: var(--icons-and-details);
+}
+
+
+.modal-container .modal .btn-modal-2{
+  background-color: var(--blue);
+}
+
+.modal-container .modal .btn-modal-2.red{
+  background: var(--red);
+}
+
+.modal-container .modal .btn-modal-2:hover{
+  filter: brightness(1.5) ;
+}
+
+.modal form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media (min-width:97rem){
+  body{
+    background-size: 100% !important;
+  }
+}

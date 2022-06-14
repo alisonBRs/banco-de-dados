@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket.Q - Perguntas e respostas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/global.css" />
+    <link rel="stylesheet" href="CSS/room.css" />
+  </head>
+
+  <body>
+    <section class="grid-container">
+      <header>
+        <img class="logo" src="./images/img/Logo.svg" />
+
+        <div class="button-container">
+          <div class="input-copy">
+            <input id="room-id" data-id="323243" class="input" type="text" />
+            <img src="images/img/copy 1.svg" />
+          </div>
+
+          <a class="button" href="#"
+            ><img src="./images/img/users 2.svg" />Criar sala</a
+          >
+        </div>
+      </header>
+
+      <div class="container">
+        <h3 class="title title-question">Faça sua pergunta</h3>
+
+        <form class="textarea-container">
+          <label for="textarea"></label>
+          <textarea
+            placeholder="O que você quer perguntar?"
+            id="textarea"
+          ></textarea>
+
+          <footer class="textarea-footer">
+            <div class="annonimous-box">
+              <img src="images/img/lock_black_24dp 1.svg" alt="cadeado" />
+              <p>Esta pergunta é anônima</p>
+            </div>
+            <button type="submit" class="button small-button">Enviar</button>
+          </footer>
+        </form>
+
+        <section class="section">
+          <div class="no-questions-box off">
+            <div clOass="img-question">
+              <img
+                src="images/img/Ilustração-no-questions.svg"
+                alt="Nenhuma pergunta por aqui"
+              />
+            </div>
+
+            <div class="title-box">
+              <h3 class="title">Nenhuma pergunta por aqui...</h3>
+              <p>
+                Faça sua primeira pergunta e envie o código dessa sala para
+                outras pessoas!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="section" class="grid">
+          <div class="message-container read">
+            <div class="message-user">
+              <div class="user-wrapper">
+                <img src="images/img/user 1.svg" />
+                <p class="alternative-text">O que é TypeSCRYPT?</p>
+              </div>
+            </div>
+
+            <div class="message-options">
+              <button class="alternative-text check">
+                <img src="images/img/check 1.svg" />
+                <p data-id="2" href="#" id="read">Marcar como lida</p>
+              </button>
+
+              <button class="alternative-text delete">
+                <img src="images/img/trash 1.svg" />
+                <p data-id="2" href="#" id="delete-modal">Excluir</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="message-container read">
+            <div class="message-user">
+              <div class="user-wrapper">
+                <img src="images/img/user 1.svg" />
+                <p class="alternative-text">O que significa "!" em js</p>
+              </div>
+            </div>
+
+            <div class="message-options">
+              <button class="alternative-text check">
+                <img src="images/img/check 1.svg" />
+                <p data-id="3" href="#" id="read">Marcar como lida</p>
+              </button>
+
+              <button class="alternative-text delete">
+                <img src="images/img/trash 1.svg" />
+                <p data-id="3" href="#" id="delete-modal">Excluir</p>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h3>Excluir pergunta</h3>
+        <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+        <form action="" method="POST">
+          <label for-id="password"></label>
+          <input
+            placeholder="Digite sua senha"
+            class="input"
+            type="password"
+            name="password"
+          />
+          <div class="modal-action">
+            <a class="button btn-modal-1" id="button-delete-cancel">
+              Cancelar
+            </a>
+            <button type="submit" class="button btn-modal-2 red">
+              Sim, excluir
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/main.js" defer type="module"></script>
+  </body>
+</html>
